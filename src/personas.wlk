@@ -70,19 +70,3 @@ object gonzen{
 	}
 }
 
-// Patovas
-object rochensen{
-	method dejaPasar(persona){
-		return persona.edad() >= 21		
-	}
-}
-object rodrigsen{
-	method dejaPasar(persona){
-		return persona.ropa() == "negra"
-	}
-}
-object gushtavotruccensen{
-	method dejaPasar(persona){
-		return false
-	}
-}
