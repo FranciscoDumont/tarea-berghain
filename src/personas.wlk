@@ -10,6 +10,16 @@ object vonLukaz{
 	method edad(){
 		return edad
 	}
+	
+	method disminuirEnergia(cantidad){
+		energia -= cantidad
+	}
+	method aumetarDiversion(cantidad){
+		diversion -= cantidad
+	}
+	method energia(cantidad){
+		energia = cantidad
+	}
 }
 
 object bianker{
@@ -24,6 +34,16 @@ object bianker{
 	method edad(){
 		return edad
 	}
+	
+	method disminuirEnergia(cantidad){
+		energia -= cantidad
+	}
+	method aumetarDiversion(cantidad){
+		diversion -= cantidad
+	}
+	method energia(cantidad){
+		energia = cantidad
+	}
 }
 
 object gonzen{
@@ -37,6 +57,16 @@ object gonzen{
 	}
 	method edad(){
 		return edad
+	}
+	
+	method disminuirEnergia(cantidad){
+		energia -= cantidad
+	}
+	method aumetarDiversion(cantidad){
+		diversion -= cantidad
+	}
+	method energia(cantidad){
+		energia = cantidad
 	}
 }
 
