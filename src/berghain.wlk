@@ -17,6 +17,7 @@ object gushtavotruccensen{
 		return false
 	}
 }
+
 //Djs
 object dixon{
 	method baila(persona){
@@ -42,14 +43,35 @@ object tommyMunoz{
 // Pistas
 
 object mainRoom{
+	var personasBailando = #{}
+	
 	method baila(persona){
 		persona.disminuirEnergia(40)
 		persona.aumetarDiversion(30)
+		personasBailando.add(persona)
 	}
 }
 
 object panoramaBar{	
+	var personasBailando = #{}
+	var dj
 	
+	method dj(nuevoDj){
+		dj = nuevoDj
+	}
+	
+	method baila(persona){
+		dj.baila(persona)
+		personasBailando.add(persona)
+	}
+}
+
+object darkRoom{
+	var personasBailando = #{}
+	
+	method baila(persona){
+		personasBailando.add(persona)
+	}
 }
 
 // Berghain
