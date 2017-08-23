@@ -17,6 +17,27 @@ object gushtavotruccensen{
 		return false
 	}
 }
+//Djs
+object dixon{
+	method baila(persona){
+		persona.disminuirEnergia(60)
+		persona.aumetarDiversion(120)
+	}
+}
+	
+object marcelDettmann{
+	method baila(persona){
+		persona.energia(0)
+		persona.aumentarDiversion(1000)
+	}
+}
+	
+object tommyMunoz{
+	method baila(persona){
+		persona.disminuirEnergia(80)
+	}
+}
+
 
 // Pistas
 
@@ -27,20 +48,8 @@ object mainRoom{
 	}
 }
 
-object panoramaBar{
-	method dixon(persona){
-		persona.disminuirEnergia(60)
-		persona.aumetarDiversion(120)
-	}
+object panoramaBar{	
 	
-	method marcelDettmann(persona){
-		persona.energia(0)
-		persona.aumentarDiversion(1000)
-	}
-	
-	method tommyMunoz(persona){
-		persona.disminuirEnergia(80)
-	}
 }
 
 // Berghain
@@ -61,3 +70,12 @@ object berghain{
 	
 }
 
+
+
+
+/*Modelar tanto a Berghain (pistas, DJs y patovas) como a las personas.
+Hacer que una persona entre al club (en caso que el patova de turno lo deje).
+Que todas las personas de una pista bailen.
+Saber cuántas personas están bailando en cada pista.
+Saber si Gonzen está bailando en alguna pista. 
+ */
