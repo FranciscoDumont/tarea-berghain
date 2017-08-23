@@ -42,3 +42,22 @@ object panoramaBar{
 		persona.disminuirEnergia(80)
 	}
 }
+
+// Berghain
+
+object berghain{
+	var patovaDeTurno
+	var personasAdentro = #{}
+	
+	method entra(persona){
+		if(patovaDeTurno.dejaPasar(persona)){
+			personasAdentro.add(persona)
+		}
+	}
+	
+	method patovaDeTurno(patova){
+		patovaDeTurno = patova
+	}
+	
+}
+
