@@ -111,6 +111,11 @@ object berghain{
 		return (pista.personasBailando()).size()
 	}
 	
+	method bailanTodos(pista){
+		var bailadores=pista.personasBailando()
+		bailadores.forEach({persona => pista.baila(persona)})
+	}
+	
 	method patovaDeTurno(patova){
 		patovaDeTurno = patova
 	}
