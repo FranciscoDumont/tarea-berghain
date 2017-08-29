@@ -45,10 +45,13 @@ object tommyMunoz{
 object mainRoom{
 	var personasBailando = #{}
 	
+	method entra(persona){
+		personasBailando.add(persona)
+	}
+		
 	method baila(persona){
 		persona.disminuirEnergia(40)
 		persona.aumetarDiversion(30)
-		personasBailando.add(persona)
 	}
 	
 	method personasBailando(){
@@ -64,9 +67,12 @@ object panoramaBar{
 		dj = nuevoDj
 	}
 	
+	method entra(persona){
+		personasBailando.add(persona)
+	}
+	
 	method baila(persona){
 		dj.baila(persona)
-		personasBailando.add(persona)
 	}
 	
 	method personasBailando(){
@@ -77,8 +83,11 @@ object panoramaBar{
 object darkRoom{
 	var personasBailando = #{}
 	
-	method baila(persona){
+	method entra(persona){
 		personasBailando.add(persona)
+	}
+	
+	method baila(persona){
 	}
 	
 	method personasBailando(){
