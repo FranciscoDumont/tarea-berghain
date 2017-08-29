@@ -100,6 +100,7 @@ object darkRoom{
 object berghain{
 	var patovaDeTurno
 	var personasAdentro = #{}
+	var pistas = #{mainRoom,panoramaBar,darkRoom}
 	
 	method entra(persona){
 		if(patovaDeTurno.dejaPasar(persona)){
@@ -120,14 +121,11 @@ object berghain{
 		patovaDeTurno = patova
 	}
 	
+	method estaEnAlgunaPista(persona){
+		return pistas.any({
+			pista => (pista.personasBailando()).contains(persona)
+		})
+	}
+	
 }
 
-
-
-
-/*Modelar tanto a Berghain (pistas, DJs y patovas) como a las personas.
-Hacer que una persona entre al club (en caso que el patova de turno lo deje).
-Que todas las personas de una pista bailen.
-Saber cuántas personas están bailando en cada pista.
-Saber si Gonzen está bailando en alguna pista. 
- */
