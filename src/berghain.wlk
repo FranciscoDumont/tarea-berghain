@@ -50,6 +50,10 @@ object mainRoom{
 		persona.aumetarDiversion(30)
 		personasBailando.add(persona)
 	}
+	
+	method personasBailando(){
+		return personasBailando
+	}
 }
 
 object panoramaBar{	
@@ -64,6 +68,10 @@ object panoramaBar{
 		dj.baila(persona)
 		personasBailando.add(persona)
 	}
+	
+	method personasBailando(){
+		return personasBailando
+	}
 }
 
 object darkRoom{
@@ -71,6 +79,10 @@ object darkRoom{
 	
 	method baila(persona){
 		personasBailando.add(persona)
+	}
+	
+	method personasBailando(){
+		return personasBailando
 	}
 }
 
