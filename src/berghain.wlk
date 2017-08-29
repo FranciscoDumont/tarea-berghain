@@ -98,6 +98,10 @@ object berghain{
 		}
 	}
 	
+	method cuantaGenteHayEn(pista){
+		return (pista.personasBailando()).size()
+	}
+	
 	method patovaDeTurno(patova){
 		patovaDeTurno = patova
 	}
